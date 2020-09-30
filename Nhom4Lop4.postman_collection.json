@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "3aff583a-5db5-46aa-9560-1c8d5f19487e",
+		"name": "Nhom4Lop4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by ID user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/users/1",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\": \"duc\",\r\n    \"Usermail\": \"Nguyễn Văn Đức\",\r\n    \"Password\": \"123456\",\r\n    \"Status\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user by ID user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"User_ID\": \"10\",\r\n    \"Username\": \"Hoàng Thanh Tùng\",\r\n    \"Usermail\": \"tung@vnpt.vn\",\r\n    \"Password\": \"123456\",\r\n    \"Status\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/users/10",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user By ID user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/users/9",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/employees",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee by ID employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/employees/1",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"EmployeeCode\": \"15698\",\r\n        \"EmployeeName\": \"Ngọc Yến\",\r\n        \"EmployeeTitle\": \"Dev\",\r\n        \"EmployeePhone\": \"0932644877\",\r\n        \"EmployeeEmail\": \"yenptn@vnpt.vn\",\r\n        \"DepartmentName\": \"P.PTGP3 VNPT IT2\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/employees",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee by ID Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"EmployeeCode\": \"15698\",\r\n        \"EmployeeName\": \"Ngọc Yến\",\r\n        \"EmployeeTitle\": \"Dev\",\r\n        \"EmployeePhone\": \"0932644877\",\r\n        \"EmployeeEmail\": \"yenptn@vnpt.vn\",\r\n        \"DepartmentName\": \"P.PTGP3 VNPT IT2\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/employees/3",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee By ID Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/employees/7",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"employees",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Log IN OUT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/Logs",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Logs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Log by ID Log",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/Logs/3",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Logs",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Log IN out",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeCode\": \"156989\",\r\n    \"EmployeeName\": \"Ngọc Yến\",\r\n    \"EmployeeTitle\": \"Dev\",\r\n    \"EmployeePhone\": \"0932644877\",\r\n    \"EmployeeEmail\": \"yenptn@vnpt.vn\",\r\n    \"DepartmentName\": \"P.PTGP3 - VNPT IT2\",\r\n    \"StyleScan\": \"Kiểu quét qua camera\",\r\n    \"CameraName\": \"Camera 1\",\r\n    \"ScannerName\": \"\",\r\n    \"TerminalName\": \"Raspi 1\",\r\n    \"DoorName\": \"Cửa 1\",\r\n    \"TimeInOut\": \"28/09/2020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/Logs",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Logs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Log InOut By ID Log",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"EmployeeCode\": \"156989\",\r\n    \"EmployeeName\": \"Ngọc Yến\",\r\n    \"EmployeeTitle\": \"Dev\",\r\n    \"EmployeePhone\": \"0932644877\",\r\n    \"EmployeeEmail\": \"yenptn@vnpt.vn\",\r\n    \"DepartmentName\": \"P.PTGP3 - VNPT IT2\",\r\n    \"StyleScan\": \"Kiểu quét qua máy quét QRcode\",\r\n    \"CameraName\": \"\",\r\n    \"ScannerName\": \"Máy quét 1\",\r\n    \"TerminalName\": \"Raspi 1\",\r\n    \"DoorName\": \"Cửa 2\",\r\n    \"TimeInOut\": \"29/09/2020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/Logs/3",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Logs",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Log InOut By ID Log",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://5f71806c64a3720016e60793.mockapi.io/api/Logs/1",
+					"protocol": "https",
+					"host": [
+						"5f71806c64a3720016e60793",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"Logs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
